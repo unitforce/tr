@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html lang="en">
+
+
+<head>
+  <title>UFT portal</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+ </head>
+
+
+
+
+  <style>
+    /* Set height of the grid so .sidenav can be 100% (adjust as needed) */
+    .row.content {height: 550px}
+    fom
+    /* Set gray background color and 100% height */
+    .sidenav {
+      background-color: #f1f1f1;
+      height: 150%;
+	  width:20%;
+    }
+
+
+
+
+
+	 .navbar {
+      margin-bottom: -1px;
+      border-radius: 0;
+    }
+
+
+
+
+
+
+
+
+
+
+
+
+
+	body {
+  font-family: Arial;
+}
+
+input[type=text], select {
+  width: 25%;
+
+
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: block;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
+input[type=submit] {
+  width: 20%;
+  background-color: #4CAF50;
+  color: white;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+input[type=submit]:hover {
+  background-color: #45a049;
+}
+
+div.container {
+  border-radius: 5px;
+  background-color: #f2f2f2;
+  padding: 20px;
+  position: absolute;
+
+
+   right:-95px;
+
+
+}
+
+
+  </style>
+
+
+
+
+
+<body>
+
+
+<!--start of top nav bar-->
+<div>
+<nav class="navbar navbar-inverse">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+     <a class="navbar-brand" href="#">UFT</a>
+    </div>
+    <div class="collapse navbar-collapse" id="myNavbar">
+      <ul class="nav navbar-nav">
+        <li class="active"><a href="#">Home</a></li>
+        <li><a href="#">About</a></li>
+        <li><a href="#">Details</a></li>
+
+      </ul>
+      <ul class="nav navbar-nav navbar-right">
+        <li><a href="#"><span class="glyphicon glyphicon-log-in"></span> Login</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+</div>
+<!--end of top nav bar-->
+<div>
+
+	<div class="container">
+<form action="http:\\localhost:9999/ski" method="POST" >
+
+    <label for="fname">Name</label>
+    <input type="text" id="fname" name="firstname" placeholder="Your name..">
+
+
+
+
+
+    <label for="lname">Experience</label>
+    <input type="text" id="lname" name="lastname" placeholder="Experience">
+
+    <label for="country">Location</label>
+    <select id="country" name="country">
+      <option value="Bengaluru">Bengaluru</option>
+      <option value="Mysuru">Mysuru</option>
+      <option value="Chennai">Chennai</option>
+    </select>
+
+
+    <div>
+    <label for="lname">Upload Resume</label>
+  <input type="file" id="myFile" name="filename">
+
+</div>
+
+    <input type="submit" value="Submit">
+
+
+
+
+
+
+  </form>
+
+</div>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!--start of side nav bar-->
+<div>
+
+<nav class="navbar navbar-inverse visible-xs">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand" href="#">UFT</a>
+    </div>
+    <div class="collapse navbar-collapse" id="myNavbar">
+      <ul class="nav navbar-nav">
+        <li ><a href="#">User</a></li>
+        <li><a href="#">Details</a></li>
+        <li><a href="#">Contact</a></li>
+        <li><a href="#">Info</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<div class="container-fluid">
+  <div class="row content">
+    <div class="col-sm-3 sidenav hidden-xs">
+      <h4>USER LOGIN</h4>
+      <ul class="nav nav-pills nav-stacked">
+        <li ><a href="#section1">USER</a></li>
+        <li><a href="#section2">QUERY</a></li>
+        <li><a href="#section3">CONTACT</a></li>
+        <li><a href="#section3">INFO</a></li>
+      </ul><br>
+    </div>
+
+
+
+
+      </div>
+    </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  </div>
+
+ <!--end of side nav bar-->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</body>
+</html>

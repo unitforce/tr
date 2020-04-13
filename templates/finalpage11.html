@@ -1,0 +1,57 @@
+<!--<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>resulta</title>
+  </head>
+  <body bgcolor="#E6E6FA">
+    
+  </body>
+  </html>-->
+  <html>
+  <head><h3>Top 3 resumes</h3></head>
+  <body bgcolor="#E6E6FA">
+    <table class="table table-bordered" id="myTable">
+      <style>
+      table {
+  font-family: arial, sans-serif;
+  border-collapse: collapse;
+  width: 100%;
+}
+
+td, th {
+  border: 1px solid #dddddd;
+  text-align: left;
+  padding: 8px;
+}
+
+tr:nth-child(even) {
+  background-color: #dddddd;
+}
+      </style>
+        <thead>
+        <tr>
+
+            <th>JOB ID</th>
+            <th>description<th>
+            <th>match<th>
+            <th>apply</th>
+
+
+
+        </tr>
+        </thead>
+        <tbody id="mydata">
+            {%for data in p["result"]%}
+            <tr>
+                <td>{{data.id}}</td>
+                <td>{{data.description}}</td>
+                <td>{{data.match}}</td>
+                <td>{{data.ApplicationURI}}</td>
+
+            </tr>
+            {%endfor%}
+        </tbody>
+    </table>
+</body>
+</html>
